@@ -8,6 +8,11 @@ namespace learn_aspdotnet.Controllers
 {
     public class HomeController : Controller
     {
+        public ActionResult PrintInfo()
+        {
+            return View();
+        }
+
         public ActionResult Index()
         {
             return View();
