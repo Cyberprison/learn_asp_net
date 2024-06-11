@@ -1,0 +1,23 @@
+﻿@model IEnumerable<int>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>PrintValuesCollection</title>
+</head>
+<body>
+    <div> 
+        @{ 
+            foreach (var item in Model)
+            {
+                <p>@    item</p>
+            }
+        }
+    </div>
+</body>
+</html>

@@ -163,6 +163,9 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\PrintInfo.cshtml" />
+    <Content Include="Views\Home\PrintValue.cshtml" />
+    <Content Include="Views\Home\PrintValuesCollection.cshtml" />
+    <Content Include="Views\Home\Calculate.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
