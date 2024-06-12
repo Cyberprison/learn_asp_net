@@ -16,8 +16,34 @@ namespace learn_aspdotnet.Helpers
             return new HtmlString(result);
         }
 
+        public static HtmlString CreatePadding(this HtmlHelper html)
+        {
+            var result = "<div style=\"padding: 5px;\"></div>";
+            return new HtmlString(result);
+        }
 
+        //public static HtmlString CreateFormForQuiz(this HtmlHelper html)
+        //{
+        //    //без лишних пробелов, должно быть все слитно и в строчку
+        //    //как в Core не работает
+        //    
+        ////    < div >
+        ////        {CreatePadding(html)}
+        ////            <form asp-controller='Quiz' asp-action='SendAnswer' method='post'>
+        ////                <p>You are hungry?</p><br/>
+        ////                <input type='radio' name='answer' value='1'>52<br/>
+        ////                <input type = 'radio' name = 'answer' value = '2'>давай, брат, привет<br/>
+        ////                <input type = 'radio' name = 'answer' value = '3'>да<br/>
+        ////                <button type='submit'>Enter</button>
+        ////            </form>
+        ////        {CreatePadding(html)}
+        ////    </div> 
+        //     
 
+        //    var result = $"<div>{ CreatePadding(html)}<form asp-controller='Quiz' asp-action='SendAnswer' method='post'><p>You are hungry?</p><br/><input type='radio' name='answer' value='1'>52<br/><input type='radio' name='answer' value='2'>давай, брат, привет<br/><input type='radio' name='answer' value='3'>да<br/><button type='submit'>Enter</button></form>{CreatePadding(html)}</div>";
+
+        //    return new HtmlString(result);
+        //}
 
     }
 }

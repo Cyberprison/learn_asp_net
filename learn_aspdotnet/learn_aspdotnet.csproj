@@ -122,6 +122,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
+    <Compile Include="Controllers\QuizController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -169,6 +170,9 @@
     <Content Include="Views\Home\PrintValuesCollection.cshtml" />
     <Content Include="Views\Home\Calculate.cshtml" />
     <Content Include="Views\Product\GetAllProducts.cshtml" />
+    <Content Include="Views\Quiz\SendAnswer.cshtml" />
+    <Content Include="Views\Quiz\Ok.cshtml" />
+    <Content Include="Views\Quiz\BadRequest.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
